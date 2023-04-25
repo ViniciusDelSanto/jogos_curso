@@ -73,7 +73,7 @@ def jogar():
     print("Fim de Jogo\n")
 
     jogar_novamente = input("Deseja jogar novamente?[s/n]")
-    while jogar_novamente.lower not in ["s", "n"]:
+    while jogar_novamente.lower() not in ["s", "n"]:
         print("Opcao invalida, digite 's' para sim ou 'n' para nao.")
         jogar_novamente = input("Deseja jogar novamente? (s/n): ")
     if jogar_novamente == "s":

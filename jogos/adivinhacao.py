@@ -28,14 +28,13 @@ def jogar():
     print("************************************")
     print("  Bem vindo ao jogo de Adivinhacao  ")
     print("************************************")
-    print("Acerte o numero aleatorio de 1 a 100")
-    print("************************************")
 
     numero_secreto = random.randint(1, 100)
     tentativas = escolher_nivel()
     rodada = 1
     pontos = 1000
-
+    
+    print("Acerte o numero aleatorio de 1 a 100")
     print("\nVoce tem {} tentativas!!!".format(tentativas))
 
     for rodada in range (1, tentativas + 1):

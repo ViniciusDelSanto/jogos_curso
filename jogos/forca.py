@@ -17,7 +17,7 @@ def jogar():
     acertou = False
     erros = 0
 
-    print("Palavra de {} letras!".format(num_caracteres))
+    print(f"Palavra de {num_caracteres} letras!")
     print(" ".join(letras_certas))
     
     # while True e True
@@ -38,7 +38,7 @@ def jogar():
                 index += 1
         else:
             erros += 1
-            print("Ops, você errou! Faltam {} tentativas.".format(7-erros))
+            print(f"Ops, você errou! Faltam {7-erros} tentativas.")
 
         enforcou = erros == 7
         acertou = "_" not in letras_certas

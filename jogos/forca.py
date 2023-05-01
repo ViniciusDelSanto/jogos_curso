@@ -1,5 +1,4 @@
 import random
-import palavras_dados
 # pip install unidecode
 from unidecode import unidecode
 def jogar():
@@ -8,7 +7,18 @@ def jogar():
     print("*****************************")
     print("Descubra a palavra a seguir: ")
 
-    palavra = random.choice(palavras_dados.palavras_dados).upper()
+
+    arquivo = open("dadosForca.txt", "r")
+    palavras_lista = []
+
+    for linha in arquivo:
+        linha = linha.strip()
+        palavras_lista.append(linha)
+
+    arquivo.close()
+    print(palavras_lista)
+
+    palavra = random.choice(palavras_lista).upper()
     palavra_sem_acentos = unidecode(palavra)
     num_caracteres = len(palavra)
     letras_certas = ["_" for _ in range(num_caracteres)]

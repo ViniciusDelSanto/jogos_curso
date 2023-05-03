@@ -42,7 +42,7 @@ def jogar():
         elif chute in palavra_sem_acentos:
             index = 0
             for letra in palavra:
-                if chute == letra:
+                if unidecode(chute) == unidecode(letra):
                     letras_certas[index] = palavra[index]
                 index += 1
         else:

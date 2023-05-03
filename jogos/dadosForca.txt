@@ -52,7 +52,6 @@ Jardim
 Jacinto
 Jabuti
 Ketchup
-Kung Fu
 Kombi
 Kit
 Laranja
@@ -96,7 +95,6 @@ Tatu
 Tigre
 Trompete
 Urutu
-Urso-pardo
 Urina
 Uva
 Vagão
@@ -108,7 +106,7 @@ Whisker
 Waffle
 Wok
 Xarope
-X�cara
+Xicara
 Xale
 Yoyo
 Yoga

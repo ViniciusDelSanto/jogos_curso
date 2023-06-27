@@ -16,7 +16,6 @@ def jogar():
         palavras_lista.append(linha)
 
     arquivo.close()
-    print(palavras_lista)
 
     palavra = random.choice(palavras_lista).upper()
     palavra_sem_acentos = unidecode(palavra)
